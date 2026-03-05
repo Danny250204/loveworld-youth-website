@@ -1,308 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christ Embassy | LoveWorld Pavilion Teens & Youth</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; background: #f8fafc; }
-        html { scroll-behavior: smooth; scroll-padding-top: 70px; }
-        
-        /* Navigation */
-        .navbar {
-            background: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            padding: 1rem 0;
-        }
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: #0A2E4D;
-        }
-        .logo small {
-            display: block;
-            font-size: 0.8rem;
-            color: #1F7A8C;
-        }
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: #0A2E4D;
-            font-weight: 600;
-        }
-        .nav-links a:hover {
-            color: #1F7A8C;
-        }
-
-        /* All sections - VISIBLE */
-        section {
-            padding: 4rem 0;
-            min-height: 100vh;
-            scroll-margin-top: 70px;
-        }
-
-        /* Different background for each section so you can see them */
-        #home { background: linear-gradient(135deg, #0A2E4D, #1F7A8C); color: white; }
-        #about { background: white; }
-        #pastor { background: #0A2E4D; color: white; }
-        #leadership { background: #f8fafc; }
-        #ministries { background: white; }
-        #events { background: #f8fafc; }
-        #contact { background: white; }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        /* Contact Section - SIMPLE AND CLEAR */
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .contact-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
-
-        .contact-item {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-            align-items: center;
-        }
-
-        .contact-icon {
-            width: 40px;
-            height: 40px;
-            background: #F4B223;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #0A2E4D;
-        }
-
-        .wa-btn {
-            display: inline-block;
-            background: #25D366;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-right: 0.5rem;
-        }
-
-        .call-btn {
-            display: inline-block;
-            background: #1F7A8C;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-
-        .floating-wa {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #25D366;
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            text-decoration: none;
-            z-index: 1001;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Daniel | Personal Website</title>
+<style>
+body { margin:0; font-family: Arial; background:#f4f4f4; color:#111; }
+header { background:#111; color:#fff; padding:30px; text-align:center; }
+header h1{ font-size:2.5rem; margin-bottom:10px; }
+header p{ font-size:1.2rem; color:#aaa; }
+nav { background:#222; display:flex; justify-content:center; gap:20px; padding:15px 0; }
+nav a{ color:#fff; text-decoration:none; font-weight:bold; }
+nav a:hover{ color:#38bdf8; }
+section{ padding:60px 10%; }
+h2{ margin-bottom:20px; color:#111; }
+.skills-container{ display:flex; flex-wrap:wrap; gap:15px; }
+.skill{ background:#38bdf8; color:#000; padding:10px 15px; border-radius:5px; font-weight:bold; }
+.portfolio-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+.project{ background:#fff; padding:20px; border-radius:8px; box-shadow:0 5px 15px rgba(0,0,0,0.1); }
+.gallery{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:15px; }
+.gallery img{ width:100%; height:300px; object-fit:cover; border-radius:10px; transition:transform 0.3s ease; }
+.gallery img:hover{ transform:scale(1.05); }
+footer{ text-align:center; background:#111; color:#fff; padding:20px; }
+@media(max-width:768px){ header h1{ font-size:2rem; } nav{ flex-direction:column; gap:10px; } }
+</style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                LOVEWORLD PAVILION
-                <small>Teens & Youth</small>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#pastor">Pastor</a></li>
-                <li><a href="#leadership">Leadership</a></li>
-                <li><a href="#ministries">Ministries</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- HOME SECTION -->
-    <section id="home">
-        <div class="container">
-            <h1 style="font-size: 3rem;">Raising Champions for Christ</h1>
-            <p style="font-size: 1.2rem;">Welcome to Christ Embassy LoveWorld Pavilion Teens & Youth</p>
-            <a href="#contact" style="display: inline-block; background: #F4B223; color: #0A2E4D; padding: 1rem 2rem; border-radius: 5px; text-decoration: none; margin-top: 2rem;">Join Us</a>
-        </div>
-    </section>
+<header>
+<h1>Alex Daniel</h1>
+<p>Web & Mobile App Developer | Creative Thinker | Tech Enthusiast</p>
+</header>
 
-    <!-- ABOUT SECTION -->
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p style="font-size: 1.2rem;">Christ Embassy LoveWorld Pavilion Teens & Youth is dedicated to raising the next generation of leaders for Christ.</p>
-        </div>
-    </section>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
 
-    <!-- PASTOR SECTION -->
-    <section id="pastor">
-        <div class="container">
-            <h2>Our Pastor</h2>
-            <h3 style="color: #F4B223;">Pastor Praise Idahosa</h3>
-            <p>Senior Pastor at Christ Embassy LoveWorld Pavilion</p>
-        </div>
-    </section>
+<section id="about">
+<h2>About Me</h2>
+<p>Hello! I am Alex Daniel, a passionate Web & Mobile App Developer. I build websites and mobile apps and enjoy solving real-world problems with code.</p>
+</section>
 
-    <!-- LEADERSHIP SECTION -->
-    <section id="leadership">
-        <div class="container">
-            <h2>Youth Coordinators</h2>
-            <ul style="font-size: 1.2rem;">
-                <li>Supremore Pillar</li>
-                <li>Margaret Nwaeke</li>
-                <li>Chizitere Beulah Emefiena</li>
-            </ul>
-            <h3 style="margin-top: 2rem;">Zonal Manager: Pastor Chibueze Ajah</h3>
-        </div>
-    </section>
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills-container">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">React</div>
+<div class="skill">Node.js</div>
+<div class="skill">Mobile App Development</div>
+<div class="skill">Problem Solving</div>
+</div>
+</section>
 
-    <!-- MINISTRIES SECTION -->
-    <section id="ministries">
-        <div class="container">
-            <h2>Our Ministries</h2>
-            <p>Word Lab, Praise Crew, ReachOut, Sports Fellowship</p>
-        </div>
-    </section>
+<section id="portfolio">
+<h2>Portfolio Projects</h2>
+<div class="portfolio-grid">
+<div class="project">
+<h3>Personal Portfolio Website</h3>
+<p>A responsive single-page website built with HTML, CSS, and JavaScript showcasing my skills and projects.</p>
+</div>
+<div class="project">
+<h3>E-commerce Web App</h3>
+<p>Full-stack online store with product management, authentication, and payment integration.</p>
+</div>
+<div class="project">
+<h3>Mobile App Prototype</h3>
+<p>A cross-platform mobile application prototype demonstrating interactive UI and animations.</p>
+</div>
+</div>
+</section>
 
-    <!-- EVENTS SECTION -->
-    <section id="events">
-        <div class="container">
-            <h2>Upcoming Events</h2>
-            <p>Teen Night Out - June 15</p>
-            <p>Leadership Summit - June 22</p>
-        </div>
-    </section>
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="https://i.ibb.co/Ng66YMHy/IMG-20260302-WA0059.jpg" alt="My Photo">
+<img src="https://i.ibb.co/fcPSgYK/IMG-20260302-WA0043.jpg" alt="With Friend">
+<img src="https://i.ibb.co/7Jsk66nm/IMG-20260302-WA0039.jpg" alt="With Friend">
+<img src="https://i.ibb.co/fcPSgYK/IMG-20260302-WA0043.jpg" alt="With Friend Again">
+<img src="https://i.ibb.co/Xf7TBJXh/IMG-20260302-WA0045.jpg" alt="With Friend Again">
+</div>
+</section>
 
-    <!-- CONTACT SECTION - THIS WILL SHOW -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <div class="contact-grid">
-                <!-- Left side -->
-                <div class="contact-card">
-                    <h3 style="margin-bottom: 1.5rem;">Get in Touch</h3>
-                    
-                    <!-- Location -->
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-map-pin"></i></div>
-                        <div>
-                            <strong>No.6 Odikagbo Lane</strong><br>
-                            Rumuomasi Town Hall<br>
-                            Port Harcourt, Nigeria
-                        </div>
-                    </div>
+<section id="contact">
+<h2>Contact Me</h2>
+<p>📱 WhatsApp: 08145327205</p>
+</section>
 
-                    <!-- Phone numbers -->
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
-                        <div>
-                            <div><strong>Main:</strong> +234 814 532 7205</div>
-                            <div style="margin: 0.5rem 0;">
-                                <a href="tel:+2348145327205" class="call-btn"><i class="fas fa-phone"></i> Call</a>
-                                <a href="https://wa.me/2348145327205" target="_blank" class="wa-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                            </div>
-                            
-                            <div style="margin-top: 1rem;"><strong>Alt:</strong> +234 811 301 4108</div>
-                            <div style="margin: 0.5rem 0;">
-                                <a href="tel:+2348113014108" class="call-btn"><i class="fas fa-phone"></i> Call</a>
-                                <a href="https://wa.me/2348113014108" target="_blank" class="wa-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                            </div>
-                        </div>
-                    </div>
+<footer>
+<p>© 2026 Alex Daniel | All Rights Reserved</p>
+</footer>
 
-                    <!-- Email -->
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                        <div>youth@loveworldpavilion.org</div>
-                    </div>
-
-                    <!-- Service Times -->
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
-                        <div>
-                            <strong>Sundays:</strong> 10:50 AM<br>
-                            <strong>Wednesdays:</strong> 5:30 PM
-                        </div>
-                    </div>
-
-                    <!-- Google Maps -->
-                    <a href="https://www.google.com/maps/search/?api=1&query=No.6+Odikagbo+Lane+Rumuomasi+Town+Hall+Port+Harcourt" target="_blank" style="display: block; background: #0A2E4D; color: white; text-align: center; padding: 1rem; border-radius: 5px; text-decoration: none; margin-top: 1.5rem;">
-                        <i class="fas fa-map-marked-alt"></i> Open in Google Maps
-                    </a>
-                </div>
-
-                <!-- Right side - Map -->
-                <div class="contact-card">
-                    <h3 style="margin-bottom: 1.5rem;">Find Us</h3>
-                    <div style="height: 300px; background: #eee; display: flex; align-items: center; justify-content: center;">
-                        <p>Google Maps would show here<br>No.6 Odikagbo Lane, Rumuomasi Town Hall</p>
-                    </div>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=No.6+Odikagbo+Lane+Rumuomasi+Town+Hall+Port+Harcourt" target="_blank" style="display: block; background: #1F7A8C; color: white; text-align: center; padding: 1rem; border-radius: 5px; text-decoration: none; margin-top: 1rem;">
-                        Get Directions
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Floating WhatsApp -->
-    <a href="https://wa.me/2348145327205" target="_blank" class="floating-wa">
-        <i class="fab fa-whatsapp"></i>
-    </a>
 </body>
 </html>
